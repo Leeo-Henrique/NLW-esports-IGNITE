@@ -1,24 +1,20 @@
-import { arrGames } from "./imagesImportadas";
+import { Game } from "../../App";
 import { StyledSection } from "./styles";
 
-export const Games = () => {
-  const Games = [
-    "League of Legends",
-    "Dota 2",
-    "Counter Strike",
-    "Apex Legends",
-    "Fortinite",
-    "World of Warcraft",
-  ];
+interface Props {
+  myGames: Array<Game>;
+}
+
+export const Games = ({ myGames }: Props) => {
   return (
     <StyledSection>
-      {arrGames?.map((games, index) => {
+      {myGames?.map((games, index) => {
         return (
           <a href="google.com" key={index}>
-            <img src={games} alt="Foto de game" />
+            <img src={games.bannerUrl} alt="Foto de game" />
             <div>
-              <strong>{Games[index]}</strong>
-              <span>4 anúncios</span>
+              <strong>{games.title}</strong>
+              <span>{games._count.ads} Anúncios</span>
             </div>
           </a>
         );

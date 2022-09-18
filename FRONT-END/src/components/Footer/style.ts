@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const SectionStyled = styled.section`
+export const FooterStyled = styled.footer`
   width: 90%;
   color: white;
   background-image: linear-gradient(
@@ -21,7 +21,7 @@ export const SectionStyled = styled.section`
 export const DivStyled = styled.div`
   width: 100%;
   background-color: #2a2634;
-  height: 80px;
+  height: 92px;
   border-radius: 5px;
   padding: 32px;
   align-items: center;

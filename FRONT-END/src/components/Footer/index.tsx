@@ -1,19 +1,20 @@
-import { DivStyled, SectionStyled } from "./style";
+import { DivStyled, FooterStyled } from "./style";
 import { MagnifyingGlassPlus } from "phosphor-react";
+import * as Dialog from "@radix-ui/react-dialog";
 
 export const Footer = () => {
   return (
-    <SectionStyled>
+    <FooterStyled>
       <DivStyled>
         <div>
           <strong>Não encontrou seu duo?</strong>
           <span>Publique um anúncio para encontrar novos players!</span>
         </div>
-        <button>
+        <Dialog.Trigger>
           <MagnifyingGlassPlus size={24} />
           Publicar anúncio
-        </button>
+        </Dialog.Trigger>
       </DivStyled>
-    </SectionStyled>
+    </FooterStyled>
   );
 };

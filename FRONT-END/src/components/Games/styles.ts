@@ -8,6 +8,7 @@ export const StyledSection = styled.section`
   /* overflow-x: scroll; */
   img {
     width: 180px;
+    border-radius: 10px;
   }
   a {
     text-decoration: none;
@@ -24,7 +25,7 @@ export const StyledSection = styled.section`
     align-items: flex-start;
     justify-content: center;
     position: relative;
-    bottom: 96px;
+    bottom: 93px;
     gap: 5px;
     color: white;
     background: linear-gradient(
