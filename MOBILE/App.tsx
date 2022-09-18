@@ -7,10 +7,9 @@ import {
 } from "@expo-google-fonts/inter";
 
 import { Background } from "./src/components/Background";
-import { Home } from "./src/screens/Home";
 import { StatusBar } from "react-native";
 import { Loading } from "./src/components/Loading";
-
+import { Routes } from "./src/routes";
 
 export default function App() {
   const [fontsLoade] = useFonts({
@@ -20,15 +19,14 @@ export default function App() {
     Inter_900Black,
   });
 
-
   return (
-    <Background >
+    <Background>
       <StatusBar
         barStyle="light-content"
         backgroundColor="transparent"
         translucent
       />
-      {fontsLoade ?  <Home/> : <Loading/> }
+      {fontsLoade ? <Routes /> : <Loading />}
     </Background>
   );
 }
