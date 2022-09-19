@@ -7,6 +7,7 @@ import { useEffect, useState } from "react";
 
 import { Background } from "../../components/Background";
 import LogoPng from "../../assets/logo-nlw-esports.png";
+import { DuoMatch } from "../../components/DuoMatch";
 
 import { styles } from "./styles";
 import { THEME } from "../../theme";
@@ -16,6 +17,7 @@ import api from "../../utils/api";
 
 export function Game() {
   const [duos, setDuos] = useState<DuoCardProps[]>([]);
+  const [discordDuoSelected, setDiscordDuoSelected] = useState("");
 
   const route = useRoute();
   const game = route.params as GameParams;
@@ -23,6 +25,13 @@ export function Game() {
   const navigation = useNavigation();
   const goBack = () => {
     navigation.goBack();
+  };
+
+  const GetDiscordUser = async (adsId: string) => {
+    api
+      .get(`/ads/${adsId}/discord`)
+      .then((res) => setDiscordDuoSelected(res.data.discord))
+      .catch((err) => console.log(err));
   };
 
   useEffect(() => {
@@ -57,12 +66,24 @@ export function Game() {
           data={duos}
           keyExtractor={(duo) => duo.id}
           renderItem={({ item }) => (
-            <DuoCard data={item} onConnect={() => {}} />
+            <DuoCard
+              data={item}
+              onConnect={() => {
+                GetDiscordUser(item.id);
+              }}
+            />
           )}
           horizontal
           style={styles.containerList}
           contentContainerStyle={styles.contentList}
           showsHorizontalScrollIndicator={false}
+        />
+        <DuoMatch
+          closeModal={() => {
+            setDiscordDuoSelected("");
+          }}
+          discord={discordDuoSelected}
+          visible={discordDuoSelected.length > 0}
         />
       </SafeAreaView>
     </Background>
