@@ -13,7 +13,7 @@ com a proposta de ser um aplicativo de match em games, para encontrar o seu duo
   <img align="center" alt="Ts" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/typescript/typescript-plain.svg">
   <img align="center" alt="Node" height="30" width="40" src="https://cdn.worldvectorlogo.com/logos/nodejs-icon.svg">
   <img align="center" alt="Git" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/git/git-original.svg">
-  <img align="center" alt="Git" height="30" width="40" src="https://raw.githubusercontent.com//devicons/devicon/blob/master/icons/tailwindcss/tailwindcss-original-wordmark.svg">
+  <img align="center" alt="Git" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/blob/master/icons/tailwindcss/tailwindcss-original-wordmark.svg">
             
   
   
