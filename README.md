@@ -5,7 +5,7 @@ com a proposta de ser um aplicativo de match em games, para encontrar o seu duo
 
 <div align="center" valign="top"><br>
 
-  <h1 align="center" font-size="13px"> Technology used:</h1><br>
+  <h1 align="center" font-size="13px"> Tecnologias usadas:</h1><br>
   
   <img align="center" alt="CSS" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original.svg">
   <img align="center" alt="React" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original.svg">
