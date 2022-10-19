@@ -4,7 +4,7 @@ import * as Dialog from "@radix-ui/react-dialog";
 
 export const Footer = () => {
   return (
-    <FooterStyled>
+    <FooterStyled className="animate__animated animate__bounceInDown">
       <DivStyled>
         <div>
           <strong>Não encontrou seu duo?</strong>

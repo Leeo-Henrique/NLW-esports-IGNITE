@@ -32,6 +32,7 @@ export const ListAnGameService = async (GameID: string) => {
       hourEnd: true,
       useVoiceChannel: true,
       yearsPlaying: true,
+      discord: true,
     },
     where: { gameId: GameID },
     orderBy: { createdAt: "desc" },

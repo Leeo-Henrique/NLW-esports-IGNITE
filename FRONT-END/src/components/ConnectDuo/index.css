@@ -1,0 +1,28 @@
+.OverFlow {
+  overflow-x: scroll;
+  padding-left: 16px;
+  padding-right: 32px;
+}
+.OverFlow::-webkit-scrollbar {
+  width: 10px;
+  border-radius: 10px;
+}
+
+/* Track */
+.OverFlow::-webkit-scrollbar-track {
+  background: #121214;
+}
+
+/* Handle */
+.OverFlow::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.Arrow {
+  color: white;
+  cursor: pointer;
+  position: absolute;
+  left: 0%;
+}

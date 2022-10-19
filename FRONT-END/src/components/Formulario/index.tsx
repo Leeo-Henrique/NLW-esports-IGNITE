@@ -62,7 +62,7 @@ export const Form = () => {
   };
 
   return (
-    <form className="mt-8 flex flex-col gap-4" onSubmit={(e) => dataForm(e)}>
+    <form className="mt-8 flex flex-col gap-4 " onSubmit={(e) => dataForm(e)}>
       <div className="flex flex-col gap-2">
         <label className="font-[inter]" htmlFor="game">
           Qual o game
