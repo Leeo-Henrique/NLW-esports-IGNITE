@@ -17,6 +17,32 @@ com a proposta de ser um aplicativo de match em games, para encontrar o seu duo
             
   
   
-</div><br>  
+</div><br>
 
 ![NLW-FRONT IMAGE](https://github.com/Leeo-Henrique/NLW-esports-IGNITE/blob/main/NLW-IGNITE.png?raw=true)
+
+## Como rodar a aplicação
+
+## `WEB - LocalHost`
+
+## `Abre o terminal`:
+
+CD BACK-END
+
+yarn install
+
+Espere instalar todas dependencias...
+depois rode o comando yarn dev
+
+## `Abra outro terminal`:
+
+CD FRONT-END
+
+yarn install
+
+Espere instalar todas dependencias...
+
+depois rode o comando yarn start
+
+Como seu servidor está rodando na porta 3000: o terminal vai fazer um request apenas aperte y
+e a pagina web vai se abrir

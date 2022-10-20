@@ -23,7 +23,7 @@ const CardDuo = ({ Ads }: PropsItens) => {
                 <li
                   key={index}
                   className="text-xl text-white font-black font-[inter] min-w-[180px] max-w-[180px] h-[200px] flex 
-    items-center justify-around flex-col bg-slate-700 rounded-2xl "
+    items-center justify-around flex-col bg-slate-700 rounded-2xl text-center"
                 >
                   <h1>{adsInfo.name}</h1>
                   <p className="text-sm">
@@ -56,7 +56,7 @@ const CardDuo = ({ Ads }: PropsItens) => {
             })}
           </ul>
         ) : (
-          <div className="my-7">
+          <div className="my-7 animate__animated animate__slideInLeft">
             <h1 className="text-3xl text-white">
               Ainda não existe nenhum duo para esse jogo!
             </h1>
