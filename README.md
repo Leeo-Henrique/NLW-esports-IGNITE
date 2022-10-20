@@ -25,24 +25,28 @@ com a proposta de ser um aplicativo de match em games, para encontrar o seu duo
 
 ## `WEB - LocalHost`
 
-## `Abre o terminal`:
+## `Abra o terminal`:
 
 CD BACK-END
 
-yarn install
+`yarn install`
 
 Espere instalar todas dependencias...
-depois rode o comando yarn dev
+
+depois rode o comando `yarn dev`
 
 ## `Abra outro terminal`:
 
 CD FRONT-END
 
-yarn install
+`yarn install`
 
 Espere instalar todas dependencias...
 
-depois rode o comando yarn start
+depois rode o comando `yarn start`
 
-Como seu servidor está rodando na porta 3000: o terminal vai fazer um request apenas aperte y
+Como seu servidor está rodando na porta 3000: o terminal vai fazer um request apenas aperte `y`
+
 e a pagina web vai se abrir
+
+espere a pagina se abrir e seja feliz 😁
